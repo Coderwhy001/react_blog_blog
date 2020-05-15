@@ -1,4 +1,4 @@
-let ipUrl = 'http://39.106.223.137:7001//default/'
+let ipUrl = 'http://39.106.223.137:7001/default/'
 
 let servicePath = {
   getArticleList: ipUrl + 'getArticleList',

@@ -17,7 +17,7 @@ import servicePath from '../config/apiUrl'
 
 
 const Detailed = (props) => {
-
+  
   const tocify = new Tocify()
   const renderer = new marked.Renderer()
 
