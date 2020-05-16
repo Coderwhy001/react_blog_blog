@@ -42,6 +42,7 @@ const Detailed = (props) => {
   let title = props.title
   let typeName = props.typeName
   let typeId = props.typeId
+  let view_count = props.view_count
   console.log(props)
   return (
     <div>
@@ -56,7 +57,7 @@ const Detailed = (props) => {
               <Breadcrumb>
                 <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
                 <Breadcrumb.Item><a href={"/list?id=" + typeId}>{typeName}</a></Breadcrumb.Item>
-                <Breadcrumb.Item>xxxx</Breadcrumb.Item>
+                <Breadcrumb.Item>{title}</Breadcrumb.Item>
               </Breadcrumb> 
             </div>
             <div>
@@ -66,7 +67,7 @@ const Detailed = (props) => {
               <div className="list-icon center">
                 <span><CalendarOutlined /> 2020-05-02</span>
                 <span><FolderOutlined /> {typeName}</span>
-                <span><FireOutlined /> 5864</span>
+                <span><FireOutlined /> {view_count}</span>
               </div>
               <div className="detailed-content"
                  dangerouslySetInnerHTML={{__html:html}}
