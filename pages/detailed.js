@@ -39,6 +39,10 @@ const Detailed = (props) => {
   })
 
   let html = marked(props.article_content)
+  let title = props.title
+  let typeName = props.typeName
+  let typeId = props.typeId
+  console.log(props)
   return (
     <div>
       <Head>
@@ -51,17 +55,17 @@ const Detailed = (props) => {
             <div className="bread-div">
               <Breadcrumb>
                 <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
-                <Breadcrumb.Item><a href="/">视频列表</a></Breadcrumb.Item>
+                <Breadcrumb.Item><a href={"/list?id=" + typeId}>{typeName}</a></Breadcrumb.Item>
                 <Breadcrumb.Item>xxxx</Breadcrumb.Item>
-              </Breadcrumb>
+              </Breadcrumb> 
             </div>
             <div>
               <div className="detailed-title">
-                React实战视频教程-技术胖Blog开发
+                {title}
               </div>
               <div className="list-icon center">
                 <span><CalendarOutlined /> 2020-05-02</span>
-                <span><FolderOutlined /> 视频教程</span>
+                <span><FolderOutlined /> {typeName}</span>
                 <span><FireOutlined /> 5864</span>
               </div>
               <div className="detailed-content"

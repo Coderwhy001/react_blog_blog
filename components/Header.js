@@ -5,7 +5,7 @@ import Router from 'next/router'
 import Link from 'next/link'
 import axios from 'axios'
 import servicePath from '../config/apiUrl'
-import { HomeOutlined, YoutubeOutlined, SmileOutlined, MessageOutlined } from '@ant-design/icons'
+import { HomeOutlined, ReadOutlined, LineChartOutlined, MessageOutlined } from '@ant-design/icons'
 
 
 const Header = () => {
@@ -43,16 +43,16 @@ const Header = () => {
               首页
             </Menu.Item>
             <Menu.Item key="1" onClick={handleClick}>
-              <YoutubeOutlined />
-              视频教程
+            <ReadOutlined />
+              前端基础
             </Menu.Item>
             <Menu.Item key="2" onClick={handleClick}>
               <MessageOutlined />
-                大神逼逼叨
+                个人面经
             </Menu.Item>
             <Menu.Item key="3" onClick={handleClick}>
-              <SmileOutlined />
-              快乐生活
+            <LineChartOutlined />
+              算法题解
             </Menu.Item>
           </Menu>
         </Col>

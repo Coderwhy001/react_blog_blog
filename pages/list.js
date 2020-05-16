@@ -31,6 +31,8 @@ const MyList = (res) => {
       return hljs.highlightAuto(code).value
     }
   })
+  // console.log(mylist[0].typeName)
+  let typeName = mylist[0].typeName
   return (
     <div>
       <Head>
@@ -43,7 +45,7 @@ const MyList = (res) => {
           <div className="bread-div">
             <Breadcrumb>
               <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
-              <Breadcrumb.Item>视频教程</Breadcrumb.Item>
+              <Breadcrumb.Item>{typeName}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 
@@ -86,7 +88,7 @@ MyList.getInitialProps = async (ctx) => {
   const promise = new Promise((resolve, reject) => {
     axios(servicePath.getListById + id).then(
       (res) => {
-        // console.log(res.data)
+        console.log(res.data)
         resolve(res.data)
       }
     )
