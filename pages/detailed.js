@@ -68,7 +68,7 @@ const Detailed = (props) => {
               <div className="list-icon center">
                 <span><CalendarOutlined />{addTime}</span>
                 <span><FolderOutlined /> {typeName}</span>
-                <span><FireOutlined /> {view_count}</span>
+                <span className={view_count > 100 ? "hot" : ""}><FireOutlined /> {view_count}</span>
               </div>
               <div className="detailed-content"
                  dangerouslySetInnerHTML={{__html:html}}

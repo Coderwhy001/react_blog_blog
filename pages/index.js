@@ -55,7 +55,7 @@ const Home = (res) => {
                 <div className="list-icon">
                   <span><CalendarOutlined /> {item.addTime}</span>
                   <span><FolderOutlined /> {item.typeName}</span>
-                  <span><FireOutlined /> {item.view_count}</span>
+                  <span className={item.view_count > 100 ? "hot" : ""}><FireOutlined /> {item.view_count}</span>
                 </div>
                 <div className="list-context"
                   dangerouslySetInnerHTML={{__html:marked(item.introduce)}}
