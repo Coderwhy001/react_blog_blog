@@ -36,7 +36,7 @@ const Home = (res) => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>五月的个人博客</title>
       </Head>
       <Header />
       <Row className="comm-main" type="flex" justify="center">

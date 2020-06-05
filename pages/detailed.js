@@ -43,11 +43,12 @@ const Detailed = (props) => {
   let typeName = props.typeName
   let typeId = props.typeId
   let view_count = props.view_count
+  let addTime = props.addTime
   console.log(props)
   return (
     <div>
       <Head>
-        <title>Detailed</title>
+        <title>{title}</title>
       </Head>
       <Header />
       <Row className="comm-main" type="flex" justify="center">
@@ -65,7 +66,7 @@ const Detailed = (props) => {
                 {title}
               </div>
               <div className="list-icon center">
-                <span><CalendarOutlined /> 2020-05-02</span>
+                <span><CalendarOutlined />{addTime}</span>
                 <span><FolderOutlined /> {typeName}</span>
                 <span><FireOutlined /> {view_count}</span>
               </div>

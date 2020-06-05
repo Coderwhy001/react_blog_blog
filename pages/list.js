@@ -31,12 +31,12 @@ const MyList = (res) => {
       return hljs.highlightAuto(code).value
     }
   })
-  // console.log(mylist[0].typeName)
+  console.log(mylist[0])
   let typeName = mylist[0].typeName
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>{typeName}</title>
       </Head>
       <Header />
       <Row className="comm-main" type="flex" justify="center">
