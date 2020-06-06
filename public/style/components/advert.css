@@ -1,11 +1,13 @@
 .ad-div{
   margin-top: .5rem;
+  text-align: center;
 }
 .ad-div div{
   border-radius: .3rem;
   margin-bottom: .2rem;
   overflow: hidden;
+  color: #999;
 }
-.ad-div div img{
-  height: 120px;
+.ad-div div a{
+  color: #999;
 }

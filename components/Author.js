@@ -1,4 +1,4 @@
-import { Avatar, Divider } from 'antd'
+import { Avatar, Divider, Tooltip, Tag } from 'antd'
 import { GithubOutlined, QqOutlined, WechatOutlined } from '@ant-design/icons';
 import '../public/style/components/author.css'
 const Author = () => {
@@ -8,11 +8,24 @@ const Author = () => {
           <Avatar size={100} src="http://pic4.zhimg.com/50/v2-95ce9bf17f832134f8774cf3f6450adf_hd.jpg" />
         </div>
         <div className="author-introduction">
-            大三在校学生，专注于web和移动前端开发。希望能进入大厂找到好的工作>
+            <div>前端蔡徐坤</div>
+            <div className="author-tag">
+              <Tag color="magenta">大三小白</Tag>
+              <Tag color="green">热爱开源</Tag>
+              <Tag color="blue">底层学习中</Tag>
+              <Tag color="geekblue">算法爱好者</Tag>
+              <Tag color="cyan">一入前端深似海</Tag>
+            </div>
             <Divider>社交账号</Divider>
-            <a href="https://github.com/Coderwhy001"><Avatar size={28} icon={<GithubOutlined />} className="account" /></a>
-            <Avatar size={28} icon={<QqOutlined />} className="account" />
-            <Avatar size={28} icon={<WechatOutlined />} className="account" />
+            <Tooltip title="https://github.com/Coderwhy001">
+              <a href="https://github.com/Coderwhy001"><Avatar size={28} icon={<GithubOutlined />} className="account" /></a>
+            </Tooltip>
+            <Tooltip title="2268849815">
+              <Avatar size={28} icon={<QqOutlined />} className="account" />
+            </Tooltip>
+            <Tooltip title="13870403967">
+              <Avatar size={28} icon={<WechatOutlined />} className="account" />
+            </Tooltip>
         </div>
     </div>
   )
