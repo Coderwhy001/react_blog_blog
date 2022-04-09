@@ -18,7 +18,7 @@
     "lodash": "^4.17.15",
     "markdown-navbar": "^1.4.1",
     "marked": "^1.0.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "next": "9.3.6",
     "react": "16.13.1",
     "react-dom": "16.13.1"
